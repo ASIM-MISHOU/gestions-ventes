@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionVentes.Shared", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionVentes.API", "src\GestionVentes.API\GestionVentes.API.csproj", "{BC38B876-67C5-4379-8ABB-386391888CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionVentes.Client", "src\GestionVentes.Client\GestionVentes.Client.csproj", "{74BE3E62-B302-4DE6-A05C-667906FBA83A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{BC38B876-67C5-4379-8ABB-386391888CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC38B876-67C5-4379-8ABB-386391888CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC38B876-67C5-4379-8ABB-386391888CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BE3E62-B302-4DE6-A05C-667906FBA83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BE3E62-B302-4DE6-A05C-667906FBA83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BE3E62-B302-4DE6-A05C-667906FBA83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BE3E62-B302-4DE6-A05C-667906FBA83A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1291094B-6B4F-4B19-A0CE-DCBA96836770} = {64CB5211-C701-4A9B-BF3C-73C6F8D0B11A}
 		{BC38B876-67C5-4379-8ABB-386391888CCB} = {64CB5211-C701-4A9B-BF3C-73C6F8D0B11A}
+		{74BE3E62-B302-4DE6-A05C-667906FBA83A} = {64CB5211-C701-4A9B-BF3C-73C6F8D0B11A}
 	EndGlobalSection
 EndGlobal
