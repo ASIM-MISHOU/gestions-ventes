@@ -1,6 +1,69 @@
 @GestionVentes.API_HostAddress = http://localhost:5210
 
-GET {{GestionVentes.API_HostAddress}}/weatherforecast/
+### --- Paiements ---
+
+GET {{GestionVentes.API_HostAddress}}/api/paiements
 Accept: application/json
 
 ###
+
+GET {{GestionVentes.API_HostAddress}}/api/paiements/facture/1
+Accept: application/json
+
+###
+
+POST {{GestionVentes.API_HostAddress}}/api/paiements
+Content-Type: application/json
+
+{
+  "factureId": 1,
+  "montant": 50.00,
+  "mode": "Especes"
+}
+
+### --- Promotions ---
+
+GET {{GestionVentes.API_HostAddress}}/api/promotions
+Accept: application/json
+
+###
+
+GET {{GestionVentes.API_HostAddress}}/api/promotions/produit/1/prix
+Accept: application/json
+
+###
+
+POST {{GestionVentes.API_HostAddress}}/api/promotions
+Content-Type: application/json
+
+{
+  "produitId": 1,
+  "pourcentage": 10,
+  "dateDebut": "2026-08-01",
+  "dateFin": "2026-08-31"
+}
+
+### --- Historique des ventes ---
+
+GET {{GestionVentes.API_HostAddress}}/api/historiqueventes?page=1&pageSize=20
+Accept: application/json
+
+###
+
+GET {{GestionVentes.API_HostAddress}}/api/historiqueventes/client/1
+Accept: application/json
+
+### --- Statistiques / Dashboard ---
+
+GET {{GestionVentes.API_HostAddress}}/api/statistiques/dashboard
+Accept: application/json
+
+###
+
+GET {{GestionVentes.API_HostAddress}}/api/statistiques/ventes-par-periode?granularite=jour
+Accept: application/json
+
+###
+
+GET {{GestionVentes.API_HostAddress}}/api/statistiques/top-produits?top=5
+Accept: application/json
