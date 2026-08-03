@@ -44,10 +44,15 @@ public class LigneVente
 public class Facture
 {
     public int Id { get; set; }
-    public int VenteId { get; set; }
     public string Numero { get; set; } = string.Empty;
-    public DateTime DateEmission { get; set; } = DateTime.Now;
-    public ICollection<Paiement> Paiements { get; set; } = new List<Paiement>();
+    public DateTime DateEmission { get; set; }
+
+    // Clé étrangère et propriété de navigation vers Vente
+    public int VenteId { get; set; }
+    public Vente? Vente { get; set; }
+
+    // Navigation vers les paiements
+    public List<Paiement> Paiements { get; set; } = new();
 }
 
 public class Paiement
